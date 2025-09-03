@@ -1,11 +1,11 @@
 .contact {
   padding: 6rem 8%;
   text-align: center;
-  min-height: 60vh; /* Altura pode ser menor agora */
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
 }
 
 .contact h2 {
@@ -29,7 +29,7 @@
 }
 
 .contact-content {
-  max-width: 800px; /* Largura máxima do conteúdo */
+  max-width: 800px;
   margin-top: 2rem;
 }
 
@@ -45,10 +45,9 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
-/* Estilo genérico para os botões */
 .contact .btn {
   padding: 0.8rem 1.8rem;
   font-size: 1rem;
@@ -61,7 +60,6 @@
   display: inline-block;
 }
 
-/* Botão Primário (Entrar em Contato) */
 .contact .btn {
   background: var(--accent-purple);
   color: white;
@@ -71,7 +69,6 @@
   background: var(--accent-purple-dark);
 }
 
-/* Botão Secundário (Ver CV) */
 .contact .btn-secondary {
   background: none;
   color: var(--accent-purple);

@@ -6,7 +6,7 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
-    document.body.className = ''; // Limpa classes anteriores
+    document.body.className = '';
     document.body.classList.add(theme + '-theme');
   }, [theme]);
 
@@ -22,3 +22,5 @@ export const ThemeProvider = ({ children }) => {
 };
 
 export const useTheme = () => useContext(ThemeContext);
+
+//impolementar posteriormente

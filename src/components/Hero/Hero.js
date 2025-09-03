@@ -1,32 +1,27 @@
 import React, { useCallback } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Link } from 'react-scroll'; // 1. IMPORTAR O 'Link'
-
-
-// Imports para as partículas
+import { Link } from 'react-scroll';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particlesConfig from "../../particles-config"; // Verifique se o caminho está correto
+import particlesConfig from "../../particles-config";
 
 import "./Hero.css";
 import fotoPerfil from './eu.jpeg'
 
 const Hero = () => {
   const particlesInit = useCallback(async (engine) => {
-    // Esta função carrega o motor do tsparticles
     await loadFull(engine);
   }, []);
 
   return (
     <section className="hero" id="home">
-      {/* Componente de Partículas no Fundo */}
       <Particles
         id="tsparticles"
         init={particlesInit}
         options={particlesConfig}
       />
-      
+
       <div className="hero-text">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
@@ -38,15 +33,14 @@ const Hero = () => {
         <p>
           “A persistência é o menor caminho do êxito.” – Charles Chaplin 🚀
         </p>
-        {/* --- 2. BOTÃO AJUSTADO PARA SER UM LINK DE ROLAGEM --- */}
         <motion.div >
           <Link
-            to="projects" // Aponta para a seção com id="projects"
+            to="projects"
             spy={true}
             smooth={true}
-            offset={-80} // Mesmo offset do menu para consistência
+            offset={-80}
             duration={500}
-            className="btn" // Mantém o estilo do seu botão
+            className="btn"
           >
             Ver Projetos
           </Link>

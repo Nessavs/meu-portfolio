@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowUp } from 'react-icons/fa6'; // Ícone de seta para cima
+import { FaArrowUp } from 'react-icons/fa6';
 import './Footer.css';
 
 const Footer = () => {

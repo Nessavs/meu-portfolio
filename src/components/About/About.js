@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaServer, FaLaptopCode, FaGraduationCap } from 'react-icons/fa'; // Ícones temáticos
+import { FaServer, FaLaptopCode, FaGraduationCap } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -14,8 +14,8 @@ const About = () => {
       >
         Sobre mim
       </motion.h2>
-      
-      <motion.p 
+
+      <motion.p
         className="about-intro-text"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -26,8 +26,7 @@ const About = () => {
       </motion.p>
 
       <div className="about-cards-container">
-        {/* Card 1: Foco em Back-End */}
-        <motion.div 
+        <motion.div
           className="about-card"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,8 +40,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Card 2: Jornada Full-Stack */}
-        <motion.div 
+        <motion.div
           className="about-card"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,8 +54,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Card 3: Formação e Paixão */}
-        <motion.div 
+        <motion.div
           className="about-card"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

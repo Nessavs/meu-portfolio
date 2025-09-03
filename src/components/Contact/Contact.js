@@ -13,9 +13,9 @@ const Contact = () => {
       >
         Contato
       </motion.h2>
-      
+
       <div className="contact-content">
-        <motion.div 
+        <motion.div
           className="contact-info"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,26 +23,25 @@ const Contact = () => {
           transition={{ duration: 1 }}
         >
           <p>
-          Fique à vontade para entrar em contato ou ver meu currículo completo para mais detalhes. Estou sempre aberta a novas oportunidades e parcerias.
+            Fique à vontade para entrar em contato ou ver meu currículo completo para mais detalhes. Estou sempre aberta a novas oportunidades e parcerias.
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="contact-buttons"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          {/* Este botão abrirá o aplicativo de e-mail padrão do usuário */}
-          <a 
-            href="mailto:vanessadasilva2509@gmail.com" 
+          <a
+            href="mailto:vanessadasilva2509@gmail.com"
             className="btn"
           >
             Entrar em Contato
           </a>
-          
-          <a 
+
+          <a
             href="https://www.canva.com/design/DAGHOWrxSHg/G0EFk1EDGGLytKNsewTuqA/edit"
             target="_blank"
             rel="noopener noreferrer"

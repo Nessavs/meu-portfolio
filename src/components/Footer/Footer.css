@@ -19,8 +19,8 @@
 }
 
 .footer-credit {
-    margin-top: 0.25rem;
-    opacity: 0.7;
+  margin-top: 0.25rem;
+  opacity: 0.7;
 }
 
 .footer-socials {
@@ -58,7 +58,6 @@
 }
 
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -67,15 +66,15 @@
 
   .footer-info {
     text-align: center;
-    order: 2; /* Muda a ordem dos itens */
+    order: 2;
   }
 
   .footer-socials {
     order: 1;
-    justify-content: center; /* <-- ADICIONE ESTA LINHA */
+    justify-content: center;
   }
 
   .footer-back-to-top {
-    display: none; /* Opcional: esconder o botão "voltar ao topo" no mobile */
+    display: none;
   }
 }

@@ -1,6 +1,4 @@
-/* Define as variáveis de cor para toda a aplicação */
 :root {
-  /* TEMA ESCURO (PADRÃO) */
   --background-color: #1a1a1a;
   --card-background: #2a2a2a;
   --text-color: #f5f5f5;
@@ -10,9 +8,7 @@
   --accent-purple-dark: #7c3aed;
 }
 
-/* Define as cores que serão usadas quando a classe 'light-theme' for aplicada */
 .light-theme {
-  /* TEMA CLARO */
   --background-color: #f5f5f5;
   --card-background: #ffffff;
   --text-color: #1a1a1a;
@@ -25,10 +21,8 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  /* Agora o body usa as variáveis, em vez de cores fixas */
   background-color: var(--background-color);
   color: var(--text-color);
-  /* Adiciona uma transição suave para a troca de tema */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -38,14 +32,5 @@ a {
 }
 
 button {
-  cursor: pointer;
-}
-/* Adiciona o cursor de "mãozinha" para os principais elementos interativos */
-a,
-button,
-.project-card,
-.skill,
-.timeline-content,
-.nav-link {
   cursor: pointer;
 }

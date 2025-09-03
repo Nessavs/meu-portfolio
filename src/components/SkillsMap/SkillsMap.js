@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactFlow, { Background, Controls } from 'reactflow';
-import 'reactflow/dist/style.css'; // Estilos padrão da biblioteca
-import './SkillsMap.css'; // Nossos estilos personalizados
+import 'reactflow/dist/style.css';
+import './SkillsMap.css';
 
-// 1. Definimos os nós (as caixinhas de habilidades) com a nova distribuição
 const initialNodes = [
   // Ponto Central
   { id: 'center', position: { x: 600, y: 400 }, data: { label: 'Minhas Competências' }, type: 'input', className: 'node-center' },
@@ -43,7 +42,6 @@ const initialNodes = [
   { id: 'flutter', position: { x: 1200, y: 150 }, data: { label: 'Flutter' }, className: 'node-skill' },
 ];
 
-// As conexões (arestas) continuam as mesmas
 const initialEdges = [
   { id: 'e-center-backend', source: 'center', target: 'backend', animated: true },
   { id: 'e-center-frontend', source: 'center', target: 'frontend', animated: true },

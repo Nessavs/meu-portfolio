@@ -1,8 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Importando a biblioteca de animação
+import { motion } from 'framer-motion';
 import './Projects.css';
 
-// Seus dados de projetos (pode manter a mesma lista)
 const projectsData = [
   {
     title: "Meu Portfólio",
@@ -42,20 +41,19 @@ const projectsData = [
   },
 ];
 
-// Configurações da animação
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2 // Cria um efeito cascata na animação dos cards
+      staggerChildren: 0.2
     }
   }
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 50 }, // Começa invisível e 50px para baixo
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } // Anima para visível na posição original
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
 };
 
 const Projects = () => {
@@ -66,15 +64,15 @@ const Projects = () => {
         className="projects-grid"
         variants={containerVariants}
         initial="hidden"
-        whileInView="visible" // Animação é ativada quando a seção entra na tela
-        viewport={{ once: true, amount: 0.2 }} // Configura para animar apenas uma vez
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
       >
         {projectsData.map((project, index) => (
           <motion.div
             className="project-card"
             key={index}
             variants={cardVariants}
-            whileHover={{ scale: 1.05, y: -10 }} // Efeito ao passar o mouse
+            whileHover={{ scale: 1.05, y: -10 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <h3>{project.title}</h3>

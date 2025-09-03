@@ -1,5 +1,4 @@
 import React from "react";
-// Importando os ícones
 import {
   FaNodeJs,
   FaDatabase,
@@ -12,7 +11,7 @@ import {
   SiTypescript,
   SiPostman,
   SiFlutter,
-  SiServerless, // <-- Ícone do Serverless Framework adicionado
+  SiServerless,
 } from "react-icons/si";
 
 import "./Skills.css";
@@ -49,7 +48,6 @@ const Skills = () => {
         <div className="skill">
           <SiFlutter /> Flutter
         </div>
-        {/* Nova Habilidade Adicionada */}
         <div className="skill">
           <SiServerless /> Serverless
         </div>

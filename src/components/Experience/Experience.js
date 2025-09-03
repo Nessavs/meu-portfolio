@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Experience.css';
 
-// Dados das suas experiências
 const experiences = [
   {
     role: "Desenvolvedora Back-End Node.js",
