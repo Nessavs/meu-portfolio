@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+section {
+  scroll-margin-top: 90px; /* Ajuste este valor se necessário */
+}

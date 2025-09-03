@@ -1,0 +1,81 @@
+/* Container principal da Navbar, agora como a pílula flutuante */
+.navbar {
+  /* --- Posicionamento e centralização --- */
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* --- Estilo "Pílula Redondinha" --- */
+  width: auto;
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(42, 42, 42, 0.8);
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+  /* Efeito de vidro (Opcional, mas muito moderno) */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* --- Organização interna (Flexbox) --- */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* Espaço entre o logo e os links */
+  z-index: 1000;
+}
+
+/* Estilo para o seu nome/logo */
+.logo {
+  font-size: 1.2rem;
+  /* Ajustei o tamanho para caber melhor na pílula */
+  font-weight: bold;
+  color: var(--accent-purple);
+  /* Usando a variável de cor roxa */
+  white-space: nowrap;
+  /* Evita que o nome quebre a linha */
+}
+
+/* A lista de links agora é bem mais simples */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  /* Espaçamento entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de cada link individual */
+.nav-links a {
+  color: var(--text-secondary);
+  /* Cor cinza para links não ativos */
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-bottom: 5px;
+  /* Adiciona espaço para o efeito 'active' */
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--text-color);
+  /* Cor branca ao passar o mouse */
+}
+
+/* Estilo do link ativo (se estiver usando o react-scroll) */
+.nav-links a.active {
+  color: var(--accent-purple);
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-purple);
+  bottom: 0;
+  left: 0;
+}

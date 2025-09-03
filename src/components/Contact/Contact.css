@@ -1,0 +1,84 @@
+.contact {
+  padding: 6rem 8%;
+  text-align: center;
+  min-height: 60vh; /* Altura pode ser menor agora */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.contact h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  position: relative;
+  display: inline-block;
+}
+
+.contact h2::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background: var(--accent-purple);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.contact-content {
+  max-width: 800px; /* Largura máxima do conteúdo */
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; 
+}
+
+/* Estilo genérico para os botões */
+.contact .btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Botão Primário (Entrar em Contato) */
+.contact .btn {
+  background: var(--accent-purple);
+  color: white;
+}
+
+.contact .btn:hover {
+  background: var(--accent-purple-dark);
+}
+
+/* Botão Secundário (Ver CV) */
+.contact .btn-secondary {
+  background: none;
+  color: var(--accent-purple);
+  border: 2px solid var(--accent-purple);
+}
+
+.contact .btn-secondary:hover {
+  background: var(--accent-purple);
+  color: white;
+}

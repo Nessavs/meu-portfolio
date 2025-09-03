@@ -1,0 +1,34 @@
+.skills {
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #a855f7;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill {
+  background: #111;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  border-color: #a855f7;
+}

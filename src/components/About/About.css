@@ -1,0 +1,78 @@
+.about {
+  padding: 6rem 8%;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  position: relative;
+  display: inline-block;
+}
+
+.about h2::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background: var(--accent-purple);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.about-intro-text {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.about-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.3); /* Brilho roxo sutil */
+}
+
+.about-card .icon {
+  font-size: 3rem;
+  color: var(--accent-purple);
+  margin-bottom: 1.5rem;
+}
+
+.about-card h4 {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.highlight {
+  color: var(--accent-purple);
+  font-weight: 600;
+}

@@ -1,0 +1,89 @@
+.hero {
+  /* Regra 1: O container principal precisa ter position: relative */
+  position: relative;
+  overflow: hidden; /* Evita que partículas "vazem" para fora da seção */
+
+  /* Seu código existente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  min-height: 90vh;
+}
+
+/* Regra 2: O conteúdo (texto e imagem) precisa ficar em uma camada SUPERIOR */
+.hero-text, .hero-img {
+  position: relative;
+  z-index: 2; /* Define a camada 2 (acima das partículas) */
+}
+
+/* Regra 3: O container das partículas precisa ficar em uma camada INFERIOR */
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Define a camada 1 (atrás do conteúdo) */
+}
+
+
+/* --- O RESTO DO SEU CSS ORIGINAL --- */
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color); /* Usando variável para o tema */
+}
+
+.highlight {
+  color: var(--accent-purple); /* Usando variável para o tema */
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary); /* Usando variável para o tema */
+}
+
+.btn {
+  background: var(--accent-purple);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--accent-purple-dark);
+}
+
+.socials {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-secondary); /* Usando variável para o tema */
+}
+
+.socials a {
+    color: inherit; /* Herda a cor do container .socials */
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: var(--accent-purple);
+}
+
+.hero-img img {
+  border-radius: 1rem;
+  border: 2px solid var(--accent-purple);
+  width: 100%; 
+  max-width: 400px; 
+}
