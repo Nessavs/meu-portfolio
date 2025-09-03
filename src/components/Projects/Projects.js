@@ -5,28 +5,40 @@ import './Projects.css';
 // Seus dados de projetos (pode manter a mesma lista)
 const projectsData = [
   {
-    title: "API de Contatos com Integração Climática",
-    technologies: ["Node.js", "Hapi.js", "MongoDB", "REST API"],
-    description: "API RESTful robusta para gerenciamento de contatos, com funcionalidades como soft delete, filtros de busca e integração com a API HG Brasil Weather.",
-    link: "https://github.com/Nessavs/api_contatos_clima"
-  },
-  {
-    title: "GitHub Finder",
-    technologies: ["React", "TypeScript", "API REST"],
-    description: "Aplicação front-end que permite buscar perfis de usuários no GitHub, utilizando a API oficial para consultar dados em tempo real.",
-    link: "https://github.com/Nessavs/github_finder"
+    title: "Meu Portfólio",
+    technologies: ["React", "Tailwind CSS"],
+    description: "Portfólio pessoal desenvolvido em React para apresentar meus projetos, habilidades e experiências de forma interativa e moderna.",
+    link: "https://github.com/Nessavs/meu-portfolio"
   },
   {
     title: "Contador de Passos (Mobile App)",
-    technologies: ["Mobile", "UI/UX", "Intercâmbio"],
+    technologies: ["Mobile", "Dart", "Flutter", "UI/UX", "Intercâmbio", "Espanhol"],
     description: "Trabalho de graduação sobre um app de passos/calorias, desenvolvido durante um intercâmbio online internacional com a Fundación Universitaria Católica del Norte (Colômbia).",
     link: "https://github.com/Nessavs/contador_pasos"
   },
   {
-    title: "Sistema de Biblioteca",
-    technologies: ["Full-Stack", "Frontend", "Backend"],
-    description: "Sistema completo para gerenciamento de uma biblioteca, integrando a interface do usuário (front-end) com a lógica de servidor e banco de dados (back-end).",
-    link: "https://github.com/Nessavs/Biblioteca"
+    title: "API de Contatos com Integração Climática",
+    technologies: ["Node.js", "Docker", "Hapi.js", "MongoDB", "REST API"],
+    description: "API RESTful para gerenciamento de contatos, com funcionalidades como soft delete, filtros de busca e integração com a API HG Brasil Weather.",
+    link: "https://github.com/Nessavs/api_contatos_clima"
+  },
+  {
+    title: "GitHub Finder",
+    technologies: ["React", "TypeScript", "API REST", "Vite"],
+    description: "Aplicação front-end que permite buscar perfis de usuários no GitHub, utilizando a API oficial para consultar dados em tempo real.",
+    link: "https://github.com/Nessavs/github_finder"
+  },
+  {
+    title: "Carteira Pessoal",
+    technologies: ["PHP", "CodeIgniter", "Docker", "MySQL"],
+    description: "Aplicação web para controle financeiro pessoal, incluindo cadastro de transações, dashboards interativos e estatísticas com gráficos.",
+    link: "https://github.com/Nessavs/carteira-pessoal"
+  },
+  {
+    title: "Monitoramento de Temperatura com ESP32",
+    technologies: ["C++", "IoT", "ESP32", "Sensores"],
+    description: "Projeto IoT utilizando ESP32 para monitorar a temperatura ambiente com sensores, coletando e exibindo dados em tempo real.",
+    link: "https://github.com/Nessavs/ESP32COMSENSORES"
   },
 ];
 
@@ -50,7 +62,7 @@ const Projects = () => {
   return (
     <div className="projects-section" id="projects">
       <h2>Meus Projetos</h2>
-      <motion.div 
+      <motion.div
         className="projects-grid"
         variants={containerVariants}
         initial="hidden"
@@ -58,8 +70,8 @@ const Projects = () => {
         viewport={{ once: true, amount: 0.2 }} // Configura para animar apenas uma vez
       >
         {projectsData.map((project, index) => (
-          <motion.div 
-            className="project-card" 
+          <motion.div
+            className="project-card"
             key={index}
             variants={cardVariants}
             whileHover={{ scale: 1.05, y: -10 }} // Efeito ao passar o mouse
