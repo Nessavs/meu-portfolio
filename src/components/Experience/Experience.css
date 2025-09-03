@@ -130,13 +130,13 @@
 
 @media screen and (max-width: 768px) {
   .timeline::after {
-    left: 31px;
+    left: 20px;
   }
 
   .timeline-item {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 55px;
+    padding-right: 15px;
   }
 
   .timeline-item:nth-child(odd),
@@ -145,6 +145,6 @@
   }
 
   .timeline-item::after {
-    left: 21px;
+    left: 10px;
   }
 }

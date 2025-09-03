@@ -1,65 +1,80 @@
 .skills-map-section {
-    padding: 6rem 2rem;
-    text-align: center;
-    background-color: var(--background-dark);
+  padding: 6rem 2rem;
+  text-align: center;
+  background-color: var(--background-dark);
 }
 
 .skills-map-section h2 {
-    font-size: 2.8rem;
-    margin-bottom: 4rem;
-    color: var(--text-light);
-    position: relative;
-    display: inline-block;
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  color: var(--text-light);
+  position: relative;
+  display: inline-block;
 }
 
 .skills-map-section h2::after {
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 4px;
-    background: var(--accent-purple);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background: var(--accent-purple);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .skills-map-container {
-    width: 100%;
-    height: 70vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    background-color: var(--card-background);
+  width: 100%;
+  height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-background);
 }
 
 .react-flow__node {
-    border-radius: 8px;
-    color: var(--text-light);
-    padding: 10px 20px;
-    font-weight: 600;
-    text-align: center;
+  border-radius: 8px;
+  color: var(--text-light);
+  padding: 10px 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .node-center {
-    background-color: var(--accent-purple);
-    border: 2px solid var(--accent-purple);
-    font-size: 1.2rem;
+  background-color: var(--accent-purple);
+  border: 2px solid var(--accent-purple);
+  font-size: 1.2rem;
 }
 
 .node-category {
-    background-color: var(--card-background);
-    border: 2px solid var(--accent-purple);
+  background-color: var(--card-background);
+  border: 2px solid var(--accent-purple);
 }
 
 .node-skill {
-    background-color: #3a3a3a;
-    border: 1px solid var(--border-color);
-    font-size: 0.9rem;
+  background-color: #3a3a3a;
+  border: 1px solid var(--border-color);
+  font-size: 0.9rem;
 }
 
 .react-flow__edge-path {
-    stroke: var(--accent-purple);
-    stroke-width: 2;
+  stroke: var(--accent-purple);
+  stroke-width: 2;
+}
+
+@media (max-width: 768px) {
+  .skills-map-section {
+    padding: 4rem 1rem;
+  }
+
+  .skills-map-container {
+    height: 50vh;
+    max-width: 100%;
+  }
+
+  .skills-map-section h2 {
+    font-size: 2.2rem;
+  }
 }

@@ -59,6 +59,10 @@
 
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
   .footer-content {
     flex-direction: column;
     gap: 1.5rem;
